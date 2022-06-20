@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Kia Signature';
+    src: url('KiaSignatureBold.eot');
+    src: url('KiaSignatureBold.eot?#iefix') format('embedded-opentype'),
+        url('KiaSignatureBold.woff2') format('woff2'),
+        url('KiaSignatureBold.woff') format('woff'),
+        url('KiaSignatureBold.ttf') format('truetype'),
+        url('KiaSignatureBold.svg#KiaSignatureBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
