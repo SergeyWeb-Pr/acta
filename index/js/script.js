@@ -7,6 +7,15 @@ $('.your-class').slick({
   variableWidth: true,
   prevArrow: '<button type="button" class="slick-prev"><img src="assets/icon/prev.png" class="reviews__arrow_left" alt="left-arrow"></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="assets/icon/next.png" class="reviews__arrow_right" alt="right-arrow"></button>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        prevArrow: false,
+        nextArrow: false
+      }
+    }
+  ]
   
 });
 
