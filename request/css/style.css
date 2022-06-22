@@ -1849,6 +1849,7 @@ ul.breadcrumb li+li:before {
 .request-page {
 	color: #fff;
 	padding-top: 20px;
+	padding-bottom: 66px;
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -2405,9 +2406,9 @@ ul.breadcrumb li+li:before {
 	.servcentr__wrapper {
 		column-gap: 20px;
 	}
-	.your-class .slick-next, .your-class .slick-prev {
-		display: none;
-	}
+	/* .your-class .slick-next, .your-class .slick-prev {
+		display: none !important;
+	} */
 
 }
 @media screen and (max-width: 992px) {
@@ -2531,6 +2532,7 @@ ul.breadcrumb li+li:before {
 		background-color: #05141F;
 		padding-top: 0;
 		padding-bottom: 31px;
+		height: auto;
 	}
 	.hero__img {
 		display: block;
@@ -2587,7 +2589,7 @@ ul.breadcrumb li+li:before {
 		margin-bottom: 10px;
 	}
 	.ymap-container {
-		max-width: 313px;
+		max-width: 100%;
 		max-height: 300px;
 	}
 	.footer__middle {
@@ -2624,6 +2626,11 @@ ul.breadcrumb li+li:before {
 		line-height: 40px;
 	}
 }
+@media screen and (max-width: 600px) {
+	.error-page {
+		height: auto;
+	}
+}
 @media screen and (max-width: 375px) {
 	.error-page__list {
 		flex-direction: column;
@@ -2638,6 +2645,11 @@ ul.breadcrumb li+li:before {
 	.request-page__title {
 		font-size: 35px;
 		line-height: 40px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.request-page {
+		height: auto;
 	}
 }
 
