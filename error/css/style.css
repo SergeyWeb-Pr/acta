@@ -2631,13 +2631,14 @@ ul.breadcrumb li+li:before {
 	.error-page {
 		height: auto;
 	}
-}
-@media screen and (max-width: 375px) {
 	.error-page__list {
 		flex-direction: column;
 		column-gap: inherit;
 		row-gap: 10px;
 	}
+}
+@media screen and (max-width: 375px) {
+	
 }
 
 /* ////request////////// */
