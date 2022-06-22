@@ -2531,6 +2531,7 @@ ul.breadcrumb li+li:before {
 		background-color: #05141F;
 		padding-top: 0;
 		padding-bottom: 31px;
+		height: auto;
 	}
 	.hero__img {
 		display: block;
@@ -2587,7 +2588,7 @@ ul.breadcrumb li+li:before {
 		margin-bottom: 10px;
 	}
 	.ymap-container {
-		max-width: 313px;
+		max-width: 100%;
 		max-height: 300px;
 	}
 	.footer__middle {
