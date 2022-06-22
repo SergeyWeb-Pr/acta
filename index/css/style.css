@@ -2405,9 +2405,9 @@ ul.breadcrumb li+li:before {
 	.servcentr__wrapper {
 		column-gap: 20px;
 	}
-	.your-class .slick-next, .your-class .slick-prev {
+	/* .your-class .slick-next, .your-class .slick-prev {
 		display: none !important;
-	}
+	} */
 
 }
 @media screen and (max-width: 992px) {
