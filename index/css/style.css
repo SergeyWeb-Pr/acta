@@ -2406,7 +2406,7 @@ ul.breadcrumb li+li:before {
 		column-gap: 20px;
 	}
 	.your-class .slick-next, .your-class .slick-prev {
-		display: none;
+		display: none !important;
 	}
 
 }
