@@ -1,14 +1,75 @@
 // -----Слайдер------------
 
-$('.your-class').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  variableWidth: true,
-  prevArrow: '<button type="button" class="slick-prev"><img src="assets/icon/prev.png" class="reviews__arrow_left" alt="left-arrow"></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="assets/icon/next.png" class="reviews__arrow_right" alt="right-arrow"></button>',
-  
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    margin: 40,
+    nav: true,
+    loop:true,
+    dots: false,
+    items: 3,
+    
+    responsive:{
+      0:{
+        items:2,
+        nav:false,
+        autoWidth: true
+      },
+      768:{
+        items:2,
+        nav:false,
+        autoWidth: true
+      },
+      1200:{
+        items: 3,
+        nav:true,
+        autoWidth: false
+      }
+    }
+  });
 });
+
+$(window).resize(function(){
+
+  if ($(this).width() > 768) {
+    $(".slider").trigger('destroy.owl.carousel');
+  } else {
+    $('.owl-carousell').owlCarousel({
+      margin: 10,
+      nav: false,
+      loop:false,
+      dots: false,
+      items: 3,
+      autoWidth: true,
+      responsive:{
+        0:{
+          items:1,
+          nav:false,
+          touchDrag: true
+        }
+      }
+      
+  
+    });
+  }
+  // $('.owl-carousell').owlCarousel({
+  //   margin: 10,
+  //   nav: false,
+  //   loop:false,
+  //   dots: false,
+  //   items: 3,
+  //   autoWidth: true,
+  //   responsive:{
+  //     0:{
+  //       items:1,
+  //       nav:false,
+  //       touchDrag: true
+  //     }
+  //   }
+    
+
+  // });
+});
+
 
 // -----Аккордеон------------
 
@@ -43,24 +104,47 @@ function changeMob() {
 
 // -----выпадающий список------------
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+let intervalId;
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-if (!event.target.matches('.dropbtn')) {
+document.querySelectorAll('.dropdown-toggle').forEach(e => {
+    e.addEventListener('click', e => {
+        const menu = e.currentTarget.dataset.path;
+        document.querySelectorAll('.dropdown-menu').forEach(e => {
+            if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                e.classList.remove('menu-active');
+                e.classList.remove('open');
+                document.querySelector(`[data-target=${menu}]`).classList.add('menu-active');
+  
+                intervalId = setTimeout(() => {
+                    document.querySelector(`[data-target=${menu}]`).classList.add('open');
+                }, 0);
+            }
 
-  var dropdowns = document.getElementsByClassName("dropdown-content");
-  var i;
-  for (i = 0; i < dropdowns.length; i++) {
-    var openDropdown = dropdowns[i];
-    if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-    }
-  }
-}
-}
+            if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                clearTimeout(intervalId);
+                document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
+                intervalId = setTimeout(() => {
+                    document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+                }, 0);
+            }
+
+            window.onclick = e => {
+                if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
+                    return;
+                } else {
+                    document.querySelector(`[data-target=${menu}]`).classList.remove('menu-active');
+                    document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+                }
+            }
+        });
+    });
+});
+
+$(".dropdown").click(function(e) {
+  e.preventDefault();
+  // $(".dropdown").hasClass( "arrow-t" ).
+  $(this).toggleClass('arrow-t');
+})
 
 // -----Ползунок-----------
 
@@ -85,29 +169,62 @@ for (let i = 0; i < tabs.length; i++) {
   }, false);
 }
 // ...........Форма удалить...............
-var callbut  =  document.getElementsByClassName("call_but")[0];
 var gopop = document.querySelectorAll('.gopop');
+var gopop2 = document.querySelectorAll('.gopop2');
+var gopop3 = document.querySelectorAll('.gopop3');
 var questionform  =  document.getElementsByClassName("question-form")[0];
-var questionforminner  =  document.getElementsByClassName("question-form-inner")[0];
+var questionforminner  =  document.getElementsByClassName("question-form-inner1")[0];
+var questionforminner2  =  document.getElementsByClassName("question-form-inner2")[0];
+var questionforminner3  =  document.getElementsByClassName("question-form-inner3")[0];
 var closeform  =  document.getElementById("closeform");
+var closeform2  =  document.getElementById("closeform2");
+var closeform3  =  document.getElementById("closeform3");
 
-callbut.addEventListener("click", openQuestionForm, false);
 closeform.addEventListener("click", closeQuestionForm, false);
+closeform2.addEventListener("click", closeQuestionForm2, false);
+closeform3.addEventListener("click", closeQuestionForm3, false);
 
 for (var i = 0; i < gopop.length; i++) {
   gopop[i].addEventListener("click", openQuestionForm, false);
 }
+for (var i = 0; i < gopop2.length; i++) {
+  gopop2[i].addEventListener("click", openQuestionForm2, false);
+}
+for (var i = 0; i < gopop3.length; i++) {
+  gopop3[i].addEventListener("click", openQuestionForm3, false);
+}
 
 function openQuestionForm(){
-  questionform.classList.add("active");
+  questionform.classList.add("active1");
   setTimeout(function() { 
     questionforminner.classList.add("active");
   }, 100);
 }
+function openQuestionForm2(){
+  questionform.classList.add("active2");
+  setTimeout(function() { 
+    questionforminner2.classList.add("active");
+  }, 100);
+}
+function openQuestionForm3(){
+  questionform.classList.add("active3");
+  setTimeout(function() { 
+    questionforminner3.classList.add("active");
+  }, 100);
+}
 function closeQuestionForm(){
-  questionform.classList.remove("active");
+  questionform.classList.remove("active1");
   questionforminner.classList.remove("active");
 }
+function closeQuestionForm2(){
+  questionform.classList.remove("active2");
+  questionforminner2.classList.remove("active");
+}
+function closeQuestionForm3(){
+  questionform.classList.remove("active3");
+  questionforminner3.classList.remove("active");
+}
+
 
 // -----Карта------------
 
