@@ -9,9 +9,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Fonts -->
 
 </head>
@@ -79,7 +79,7 @@
                                     </nav><!-- #site-navigation --> 
                                     <div class="header__right header__dis-b d-flex">
                                         <div class="header__caption">
-                                            Адреса
+                                            Адреса салонов
                                         </div>
                                         <div class="header__it head-item">
                                             Режим работы: с 8:00 до 21:00
@@ -142,7 +142,7 @@
                         Содержание
                     </div>
                     <nav class="legal__menu">
-                        <ul class="legal__list">
+                        <ul class="legal__list owl-carousell owl-theme">
                             <li class="legal__item legal__item-first">
                                 <a class="legal__link" href="">Политика конфиденциальности</a>
                             </li>
@@ -258,7 +258,7 @@
                                 не ведётся. Информация о соответствующих моделях и комплектациях и их наличии, ценах, 
                                 возможных выгодах и условиях приобретения доступна у дилеров Kia.
                             </div>
-                            <button class="footer__button btn1" type="button" aria-label="Заказать звонок">
+                            <button class="footer__button btn1 gopop3" type="button" aria-label="Заказать звонок">
                                 <span class="button__text">Заказать звонок</span>
                             </button>
                             
@@ -273,6 +273,118 @@
                 </div>
             </div>
         </footer>
+        
+        <div class="question-form">
+            <div class="question-form-inner1 form-in">
+                <form id="form1" action="#">
+                    <div class="form__top">
+                        <div class="form__title">
+                            Записаться на сервис
+                        </div>
+                        <div class="form__name title-h3">
+                            Данные автомобиля
+                        </div>
+                        <div class="dropdown-all">
+                            <div class="dropdown dropbtn-none">
+                                <button class="dropbtn">VIN-номер (необязательно)</button>
+                                
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="five" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Модельный ряд
+                                </button>
+                                <ul data-target="five" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
+                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
+                                  <li><a class="dropdown-item" href="#">Модельный ряд</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="six" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Пробег автомобиля
+                                </button>
+                                <ul data-target="six" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
+                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
+                                  <li><a class="dropdown-item" href="#">Пробег автомобиля</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button data-path="seven" class="dropbtn btn btn-secondary dropdown-toggle">
+                                    Номер ТО
+                                </button>
+                                <ul data-target="seven" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
+                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
+                                  <li><a class="dropdown-item" href="#">Номер ТО</a></li>
+                                </ul>
+                            </div>
+                            <input class="dropbtn" type="date" name="Date" id="davaToday">
+                        </div>
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Контактная информация
+                        </h3>
+                        <input type="text" class="inp-p" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <input type="text" class="inp-p inp" placeholder="Какую проблему необходимо решить?">
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>                        <button class="form__button btn1" type="button" aria-label="Записаться">
+                            <span class="button__text ">Записаться</span> 
+                        </button>
+                        <div id="closeform" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+            <div class="question-form-inner2 form-in">
+                <form id="form2" action="#">
+                    <div class="form__img">
+                        <img src="assets/img/form2.png" alt="">
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Записаться на ремонт
+                        </h3>
+                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>
+                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                            <span class="button__text ">Отправить запрос</span> 
+                        </button>
+                        <div id="closeform2" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+            <div class="question-form-inner3 form-in">
+                <form id="form3" action="#">
+                    <div class="form__img">
+                        <img src="assets/img/form3.png" alt="">
+                    </div>
+                    <div class="form__bottom">
+                        <h3 class="form__name title-h3">
+                            Записаться
+                        </h3>
+                        <input type="text" class="inp-p inp-dark" placeholder="Ваше имя">
+                        <input type="text" class="inp-p" placeholder="+7 (931) 335 -    -   ">
+                        <div class="dropdown">
+                            <button data-path="one" class="dropbtn btn btn-secondary dropdown-toggle">
+                                Марка автомобиля
+                            </button>
+                            <ul data-target="one" class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
+                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
+                              <li><a class="dropdown-item" href="#">Марка автомобиля</a></li>
+                            </ul>
+                        </div>
+                        <div class="inp-p-inf">Нажимая «Отправить запрос», Вы даете согласие на <a href="">обработку персональных данных</a></div>
+                        <button class="form__button btn1" type="button" aria-label="Отправить запрос">
+                            <span class="button__text ">Отправить запрос</span> 
+                        </button>
+                        <div id="closeform3" class="close">+</div>
+                    </div> 
+                </form>
+            </div>
+        </div>
     </div>
 
     
@@ -283,9 +395,10 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="js/owl.carousel.min.js"></script>
     <!-- js -->
     <script src="js/script.js"></script>
+
+    <script>document.getElementById('davaToday').valueAsDate = new Date();</script>
 </body>
 </html>
