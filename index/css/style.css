@@ -2632,14 +2632,8 @@ input::-webkit-input-placeholder {
 	.info__title {
 		margin-bottom: 40px;
 	}
-	.info__two  .info__title {
-		margin-bottom: 0;
-	}
 	.stock__title {
 		margin-bottom: 20px;
-	}
-	.info__two .info__button {
-		display: none;
 	}
 	.count__items {
 		grid-template-columns: repeat(1, 1fr);
@@ -2788,6 +2782,7 @@ input::-webkit-input-placeholder {
 	}
 	.stock__button {
 		max-width: 100%;
+		padding: 20px;
 	}
 	.info__two .info__button {
 		display: block;
@@ -2902,6 +2897,12 @@ input::-webkit-input-placeholder {
 	}
 	.question-form-inner2 .form__button {
 		width: 293px;
+	}
+	.stock .container {
+		padding-right: inherit !important;
+	}
+	.reviews .container {
+		padding-right: inherit !important;
 	}
 }
 
@@ -3253,3 +3254,6 @@ input::-webkit-input-placeholder {
 .menu-active {
 	display: block;
 }
+
+
+
