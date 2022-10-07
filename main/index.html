@@ -52,7 +52,7 @@
       <section class="hero">
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide hero__slide" style="background-image: url(img/jpg/hero.jpg);">
+      <div class="swiper-slide hero__slide" style="background-image: url(../img/jpg/hero.jpg);">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title h1">
@@ -62,7 +62,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide hero__slide" style="background-image: url(img/jpg/hero.jpg);">
+      <div class="swiper-slide hero__slide" style="background-image: url(../img/jpg/hero.jpg);">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title h1">
@@ -72,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide hero__slide" style="background-image: url(img/jpg/hero.jpg);">
+      <div class="swiper-slide hero__slide" style="background-image: url(../img/jpg/hero.jpg);">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title h1">
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide hero__slide" style="background-image: url(img/jpg/hero.jpg);">
+      <div class="swiper-slide hero__slide" style="background-image: url(../img/jpg/hero.jpg);">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title h1">
@@ -92,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide hero__slide" style="background-image: url(img/jpg/hero.jpg);">
+      <div class="swiper-slide hero__slide" style="background-image: url(../img/jpg/hero.jpg);">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title h1">
@@ -120,8 +120,9 @@
     </h3>
     <div class="content_video__block">
       <a data-fancybox="video-gallery content_video__youtube" href="https://www.youtube.com/watch?v=z2X2HaTvkl8">
-        <img class="image content_video__image" loading="lazy" src="img/jpg/content_video.jpg" width="100%" height="600" alt="" />
-        <img class="image content_video__play" loading="lazy" src="img/svg/play.svg"  width="96" height="96" alt="">
+        <img class="image content_video__image" loading="lazy" src="img/jpg/content_video.jpg" width="100%" height="600"
+          alt="" />
+        <img class="image content_video__play" loading="lazy" src="img/svg/play.svg" width="96" height="96" alt="">
       </a>
     </div>
   </div>
@@ -134,7 +135,7 @@
     </h3>
     <div class="principles__items">
       <div class="principles__item">
-        <img loading="lazy" src="img/svg/safety.svg" class="image principles__image" width="70" height="70"
+        <img loading="lazy" src="img/svg/safety.svg" class="shake image principles__image" width="70" height="70"
           alt="Иконка">
         <div class="principles__right">
           <h5 class="principles__name h5">
@@ -147,7 +148,7 @@
         </div>
       </div>
       <div class="principles__item">
-        <img loading="lazy" src="img/svg/shield.svg" class="image principles__image" width="70" height="70"
+        <img loading="lazy" src="img/svg/shield.svg" class="shake image principles__image" width="70" height="70"
           alt="Иконка">
         <div class="principles__right">
           <h5 class="principles__name h5">
@@ -159,7 +160,7 @@
         </div>
       </div>
       <div class="principles__item">
-        <img loading="lazy" src="img/svg/economy.svg" class="image principles__image" width="70" height="70"
+        <img loading="lazy" src="img/svg/economy.svg" class="shake image principles__image" width="70" height="70"
           alt="Иконка">
         <div class="principles__right">
           <h5 class="principles__name h5">
@@ -172,7 +173,7 @@
         </div>
       </div>
       <div class="principles__item">
-        <img loading="lazy" src="img/svg/ecology.svg" class="image principles__image" width="70" height="70"
+        <img loading="lazy" src="img/svg/ecology.svg" class="shake image principles__image" width="70" height="70"
           alt="Иконка">
         <div class="principles__right">
           <h5 class="principles__name h5">
@@ -185,7 +186,7 @@
         </div>
       </div>
       <div class="principles__item">
-        <img loading="lazy" src="img/svg/innovation.svg" class="image principles__image" width="70" height="70"
+        <img loading="lazy" src="img/svg/innovation.svg" class="shake image principles__image" width="70" height="70"
           alt="Иконка">
         <div class="principles__right">
           <h5 class="principles__name h5">
@@ -207,7 +208,15 @@
       Преимущества выпускаемой продукции
     </h3>
     <div class="benefits__items">
-      <img loading="lazy" src="img/png/benefits.png" class="image benefits__image" width="504" height="412" alt="">
+      <div class="benefits__image">
+        <img loading="lazy" src="img/png/benefits.png" class="image" width="504" height="412" alt="">
+        <span class="benefits__count benefits__count1">15%</span>
+        <span class="benefits__count benefits__count2">5%</span>
+        <span class="benefits__count benefits__count3">50%</span>
+        <span class="benefits__count benefits__count4">5 ЛЕТ</span>
+        <span class="benefits__count benefits__count5">25%</span>
+      </div>
+
       <div class="benefits__item benefits__item1">
         <h5 class="benefits__name">
           <span>25%</span>Экономия газа
@@ -299,16 +308,12 @@
       </button>
       <div class="footer__items">
         <a class="footer__social footer__social_tg" href="#">
-          <!-- <img loading="lazy" src="img/svg/tg_empty.svg" class="image footer__social_link" width="" height="" alt=""> -->
         </a>
         <a class="footer__social footer__social_vk" href="#">
-          <!-- <img loading="lazy" src="img/svg/vk_empty.svg" class="image footer__social_link" width="" height="" alt=""> -->
         </a>
         <a class="footer__social footer__social_insta" href="#">
-          <!-- <img loading="lazy" src="img/svg/insta_empty.svg" class="image footer__social_link" width="" height="" alt=""> -->
         </a>
         <a class="footer__social footer__social_yt" href="#">
-          <!-- <img loading="lazy" src="img/svg/youtube_empty.svg" class="image footer__social_link" width="" height="" alt=""> -->
         </a>
       </div>
     </div>
@@ -358,6 +363,7 @@
     </form>
   </div>
 </div>
+
 
   </div>
 </body>
