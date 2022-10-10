@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap1
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/_components.js":
@@ -404,8 +404,7 @@ __webpack_require__.r(__webpack_exports__);
     burger === null || burger === void 0 ? void 0 : burger.classList.remove('burger--active');
   });
   graphmodal === null || graphmodal === void 0 ? void 0 : graphmodal.addEventListener('click', () => {
-    menu === null || menu === void 0 ? void 0 : menu.classList.remove('menu--active'); // pagebody?.classList.remove('disable-scroll');
-
+    menu === null || menu === void 0 ? void 0 : menu.classList.remove('menu--active');
     burger === null || burger === void 0 ? void 0 : burger.classList.toggle('burger--active');
     header === null || header === void 0 ? void 0 : header.classList.remove('menu--active2');
     pagebody === null || pagebody === void 0 ? void 0 : pagebody.classList.remove('dis-scroll');
@@ -419,10 +418,7 @@ __webpack_require__.r(__webpack_exports__);
   });
   modalclose === null || modalclose === void 0 ? void 0 : modalclose.addEventListener('click', () => {
     pagebody === null || pagebody === void 0 ? void 0 : pagebody.classList.remove('dis-scroll');
-  }); // modalcontainer?.addEventListener('click', () => {
-  //   pagebody?.classList.add('disable-scroll');
-  // });
-
+  });
   overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener('click', () => {
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
@@ -916,7 +912,7 @@ class GraphModal {
     if (selector) {
       this.modalContainer = document.querySelector(`[data-graph-target="${selector}"]`);
     }
-    
+
     this.modalContainer.scrollTo(0, 0)
 
     this.modal.style.setProperty('--transition-time', `${this.speed / 1000}s`);
@@ -13614,7 +13610,7 @@ __webpack_require__.r(__webpack_exports__);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -13628,14 +13624,14 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -13648,7 +13644,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -13660,7 +13656,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -13672,12 +13668,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -13688,7 +13684,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -13711,4 +13707,3 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
