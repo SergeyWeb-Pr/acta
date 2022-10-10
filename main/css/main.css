@@ -295,6 +295,8 @@ a {
   padding: 54px 70px 70px 70px;
   max-width: 600px;
   margin: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
   border-radius: 0px;
 }
 .form1__title {
