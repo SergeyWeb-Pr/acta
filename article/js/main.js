@@ -404,8 +404,7 @@ __webpack_require__.r(__webpack_exports__);
     burger === null || burger === void 0 ? void 0 : burger.classList.remove('burger--active');
   });
   graphmodal === null || graphmodal === void 0 ? void 0 : graphmodal.addEventListener('click', () => {
-    menu === null || menu === void 0 ? void 0 : menu.classList.remove('menu--active'); // pagebody?.classList.remove('disable-scroll');
-
+    menu === null || menu === void 0 ? void 0 : menu.classList.remove('menu--active');
     burger === null || burger === void 0 ? void 0 : burger.classList.toggle('burger--active');
     header === null || header === void 0 ? void 0 : header.classList.remove('menu--active2');
     pagebody === null || pagebody === void 0 ? void 0 : pagebody.classList.remove('dis-scroll');
@@ -419,10 +418,7 @@ __webpack_require__.r(__webpack_exports__);
   });
   modalclose === null || modalclose === void 0 ? void 0 : modalclose.addEventListener('click', () => {
     pagebody === null || pagebody === void 0 ? void 0 : pagebody.classList.remove('dis-scroll');
-  }); // modalcontainer?.addEventListener('click', () => {
-  //   pagebody?.classList.add('disable-scroll');
-  // });
-
+  });
   overlay === null || overlay === void 0 ? void 0 : overlay.addEventListener('click', () => {
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-expanded', 'false');
     burger === null || burger === void 0 ? void 0 : burger.setAttribute('aria-label', 'Открыть меню');
