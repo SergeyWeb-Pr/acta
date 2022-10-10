@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -26,7 +27,8 @@
     <header class="header">
   <div class="container header__container">
     <a class="logo" href="#">
-      <img class="image header__image" loading="lazy" src="img/svg/logo.svg" width="66" height="80" alt="Логотип Acta boiler">
+      <img class="image header__image" loading="lazy" src="img/svg/logo.svg" width="66" height="80"
+        alt="Логотип Acta boiler">
     </a>
     <nav class="nav" title="Главное меню" data-menu>
       <ul class="list-reset nav__list">
@@ -35,8 +37,13 @@
         <li class="nav__item"><a href="#" class="nav__link">Наука</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Вопросы-ответы</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Документы</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        <li class="nav__item ">
+          <button class="button__empty button__click header__button btn-reset" data-graph-path="Связаться с нами">
+            Связаться с нами
+          </button>
+        </li>
       </ul>
+
     </nav>
     <button class="button__empty header__button btn-reset" data-graph-path="Связаться с нами">
       Связаться с нами
