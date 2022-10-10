@@ -329,28 +329,27 @@
     <form action="#" class="form1__inner">
       <h3 class="form1__title h3">Связаться с нами</h3>
       <label class="form1__label">
-        <input type="text" name="Название организации" class="input-reset form1__input"
-          placeholder="Название организации">
+        <input type="text" name="Название организации" class="input-reset form1__input" value="Название организации" onblur="if(this.value == '') { this.value='Название организации'}" onfocus="if (this.value == 'Название организации') {this.value=''}">
       </label>
       <label class="form1__label">
-        <input type="text" name="Контактное лицо" class="input-reset form1__input" placeholder="Контактное лицо">
+        <input type="text" name="Контактное лицо" class="input-reset form1__input" value="Контактное лицо" onblur="if(this.value == '') { this.value='Контактное лицо'}" onfocus="if (this.value == 'Контактное лицо') {this.value=''}">
       </label>
       <label class="form1__label">
-        <input type="text" name="Email" class="input-reset form1__input" placeholder="Email">
+        <input type="text" name="Email" class="input-reset form1__input" value="Email" onblur="if(this.value == '') { this.value='Email'}" onfocus="if (this.value == 'Email') {this.value=''}">
       </label>
       <label class="form1__label">
-        <input type="text" name="Телефон" class="input-reset form1__input" placeholder="Телефон">
+        <input type="text" name="Телефон" class="input-reset form1__input" value="Телефон" onblur="if(this.value == '') { this.value='Телефон'}" onfocus="if (this.value == 'Телефон') {this.value=''}">
       </label>
       <label class="form1__label form1__label_flex">
         <button name="Загрузить файл" class="input-reset form1__input">Загрузить файл</button>
         <span>файлы не добавлены</span>
       </label>
       <label class="form1__label">
-        <textarea class="input-reset form1__input form1__textarea" name="Ваш комментарий к заказу" id="" cols="" rows=""
-          placeholder="Ваш комментарий к заказу"></textarea>
+        <textarea class="input-reset form1__input form1__textarea" name="Ваш комментарий к заказу" id="" cols="" rows="" placeholder="Ваш комментарий к заказу"></textarea>
       </label>
       <label class="form1__check">
-        <img loading="lazy" src="img/svg/checkmark.svg" class="image" width="" height="" alt="">
+        <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+        <label for="happy"></label>
         <div class="form1__agree">Я соглашаюсь с <a href="">политикой в отношении обработки персональных данных</a>
         </div>
       </label>
@@ -358,7 +357,6 @@
     </form>
   </div>
 </div>
-
 
   </div>
 </body>
