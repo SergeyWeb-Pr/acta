@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap1
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/_components.js":
